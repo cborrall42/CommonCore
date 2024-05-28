@@ -72,8 +72,10 @@ int	ft_putstr(char *str, int *len)
 
 int	ft_putnbr(int num, int *len, int bule)
 {
+    /*
 	if (num < -2147483648 || num > 2147483647)
 		return (-1);
+        */
 	if (num == -2147483648)
 	{
 		bule = ft_putstr("-2147483648", len);
@@ -98,10 +100,8 @@ int	ft_printf(char const *format, ...)
 {
 	va_list	args;
 	int		len;
-	int		i;
 	int		flag;
 
-	i = 0;
 	len = 0;
 	flag = 0;
 	va_start(args, format);
@@ -115,7 +115,6 @@ int	ft_printf(char const *format, ...)
 #include <stdio.h>
 int	main(void)
 {
-
 	printf(" mi printf %d\n", ft_printf("%x", 123));
 	printf(" original %d\n", printf("%x", 123));
 	ft_printf("%s\n", "");
