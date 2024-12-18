@@ -1,16 +1,16 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   get_next_line_utils.c                              :+:      :+:    :+:   */
+/*   get_next_line_utils_bonus.c                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: caborral <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/12/18 17:44:18 by caborral          #+#    #+#             */
-/*   Updated: 2024/12/18 17:44:21 by caborral         ###   ########.fr       */
+/*   Created: 2024/12/18 17:58:38 by caborral          #+#    #+#             */
+/*   Updated: 2024/12/18 17:59:03 by caborral         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "get_next_line.h"
+#include "get_next_line_bonus.h"
 
 char	*ft_strjoin(char *s1, char *s2)
 {

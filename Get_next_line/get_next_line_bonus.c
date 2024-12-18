@@ -1,16 +1,16 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   get_next_line.c                                    :+:      :+:    :+:   */
+/*   get_next_line_bonus.c                              :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: caborral <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/12/18 17:43:37 by caborral          #+#    #+#             */
-/*   Updated: 2024/12/18 19:20:29 by caborral         ###   ########.fr       */
+/*   Created: 2024/12/18 17:56:47 by caborral          #+#    #+#             */
+/*   Updated: 2024/12/18 19:19:19 by caborral         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "get_next_line.h"
+#include "get_next_line_bonus.h"
 
 char	*ft_free(char **str)
 {
@@ -98,19 +98,3 @@ char	*get_next_line(int fd)
 	storage[fd] = clean_storage(storage[fd]);
 	return (line);
 }
-/*
-#include <fcntl.h>
-#include <errno.h>
-
-int	main()
-{
-	int		fd;
-	char	*line;
-	int		lines;
-
-	lines = 1;
-	fd = open("../mi_archivo.txt", O_RDONLY);
-	while((line = get_next_line(fd)))
-		printf("%d->%s\n", lines++, line);
-}
-*/
